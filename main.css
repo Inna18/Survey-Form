@@ -1,0 +1,21 @@
+.container1 {
+    background-image: url(https://www.fetchpetcare.com/wp-content/uploads/2016/11/dreamstime_xxl_87694876.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container2 {
+    margin: 50px 150px 50px 150px;
+}
+
+form {
+    background-color: rgba(243, 234, 232, 0.5);
+    border: solid rgba(225, 223, 222) 1px;
+    border-radius: 5px;
+    padding: 20px 50px 20px 50px;
+}

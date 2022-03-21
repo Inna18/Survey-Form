@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container1">
+        <h1 id="title" class="text-center">Puppy Kindergarden</h1>
+        <p id="description" class="text-center">Thank you for choosing the 'Puppy Kindergarden'! Please take a moment to
+            complete the following survey. <br> The information you provide helps us achieve the best possible results
+            for your dog. </p>
+
+        <div class="container2">
+
+            <form action="./" id="survey-form">
+                <p class="text-center">Owner's information</p>
+                <label for="fname" id="name-label">Name: </label><br>
+                <input type="text" id="name" name="fname" placeholder="Insert your name" required><br>
+                <label for="email" id="email-label">Email: </label><br>
+                <input type="email" id="email" name="email" placeholder="Insert your email" required><br>
+                <label for="number" id="number-label">Number: (***-****-****)</label><br>
+                <input type="number" id="number" name="number" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                    placeholder="Insert digits only" min="0" max="100" required><br>
+
+                <p class="text-center">Pet's info</p>
+                <label for="fname" id="name-label">Name: </label><br>
+                <input type="text" id="name" name="fname" placeholder="Insert your dog's name" required><br>
+                <label for="age" id="age-label">Age: </label><br>
+                <input type="text" id="age" name="age" min="0" max="30" placeholder="Insert your dog's age"
+                    required><br>
+                <label for="breed" id="breed-label">Breed: </label><br>
+                <input type="text" id="breed" name="breed" placeholder="Insert your dog's breed" required><br>
+
+                <p class="text-center">Other information</p>
+                <p>Do you have other pets at home?</p>
+                <input type="radio" name="other-pets" value="Yes">
+                <label for="other-pets">Yes</label>
+                <input type="radio" name="other-pets" value="No">
+                <label for="other-pets">No</label><br>
+                <br>
+
+                <label for="number2">If 'Yes', please insert the number of other pets</label></br>
+                <input type="number" name="otherpets-num" id="number2" min="1" max="20" placeholder="" Insert number of
+                    other pets" required></br>
+                <label for="hours">How many hours does your dog usually stay at home alone?</label><br>
+                <select name="hours" id="dropdown">
+                    <option value="3~5">3~5</option>
+                    <option value="6">6</option>
+                    <option value="6~">6 and more</option>
+                </select>
+                <br>
+                <p>What activities do you usually provide for your dog?</p>
+                <input type="checkbox" value="walks" name="walks" id="walks">
+                <label for="walks">Walks</label><br>
+                <input type="checkbox" value="fetch-games" name="fetch-games" id="fetch-games">
+                <label for="fetch-games">Fetch-games</label><br>
+                <input type="checkbox" value="interactive-toys" name="interactive-toys" id="interactive-toys">
+                <label for="interactive-toys">Interactive toys</label><br>
+                <input type="checkbox" value="dog-park" name="dog-park" id="dog-park">
+                <label for="dog-park">Dog park</label><br>
+                <br>
+
+                <label for="activities">Any activities you'd like for your dog to provide in out Pet
+                    Kindergarden?</label><br>
+                <textarea name="activities" id="activities" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit" form="survey-form" value="submit" id="submit" class="text-center">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
